@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-73u1g@)!x@+c-_9m1tag03t%3yk1q6akeq7a(0zw0#bpv(ddx0
 DEBUG = True
 
 
-ALLOWED_HOSTS = ['Dentalclinic.herokuapp.com']
+ALLOWED_HOSTS = ['dentalappointmentclinic.herokuapp.com']
 
 
 # Application definition
