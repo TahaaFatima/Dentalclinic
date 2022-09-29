@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% block content %}
+ 
+
+
+ <div class="container-fluid py-5">
+      
+    <div class="container">
+        <div class="row g-5">
+          
+            <div class="col-lg-4 wow slideInUp" data-wow-delay="0.3s">
+                
+                <div class="team-item">
+                    <div class="position-relative rounded-top" style="z-index: 1;">
+                      
+                      
+                    </div>
+                    <div class="team-text position-relative bg-light text-center rounded-bottom p-4 pt-5">
+                        <h4 class="mb-2"></h4>
+                        <div>
+                            <h2>{{ single_doctor_info.doctor_name }}</h2>
+                            <hr>
+                            <p>SERVICE: {{ single_doctor_info.doctor_service }}</p>
+                            <p>FEES: {{ single_doctor_info.consultation_fee}}</p>
+                            <p>DAYS: {{ single_doctor_info.available_days}}</p>
+                            <p>TIMINGS: {{ single_doctor_info.available_time}}</p>
+                            <p>EMAIL: {{ single_doctor_info.doctor_email}}</p>
+                            <p> {{ single_doctor_info.created_at}}</p>
+                           </div><br>
+                    </div>
+    
+                </div>
+                <br>
+                <center>   <a href="{% url 'appointment' single_doctor_info.id %}" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Appointment</a>
+                </center>
+            </div>
+    
+            
+        </div>
+      
+    </div>
+    
+</div>
+    
+       
+<br><br><br><br><br><br><br>
+       
+{% endblock %}
